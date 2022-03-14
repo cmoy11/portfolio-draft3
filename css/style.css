@@ -1,44 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
-nav ul li {
+.active {
+    display: none;
+}
+
+header{
+    min-height: 10em;
+    background-image: url("../images/cb.jpg");
+    background-size: cover;
+    /* position: absolute; */
+    background-repeat: no-repeat; 
+    background-position-y:40%;
+}
+
+/* header::before {
+    /* content: ""; */
+
+
+.header_content {
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+
+/* Dropdown Menu */
+nav {
+    position: relative;
     display: inline-block;
-    height: auto;
-    width: auto;
+    justify-self: flex-start;
+    margin: 5px;
+}
+
+nav ul {
+    display: none;
+    position: absolute;
+    background-color: pink;
+    z-index: 1;
+}
+
+nav ul li {
+    width: 12em;
     padding: 10px;
     margin: 3px;
     border: 2px solid blueviolet;
     color: black;
     background-color: lightblue;
     text-align: center;
+    display: block;
 }
 
-.active {
-    background-color: white;
-    color: blueviolet;
-    text-transform: uppercase;
+nav ul li:hover {
+    background-color: orange;
 }
 
-header, main, footer{
-    border: 1px solid black;
-    padding: 3px;
-    margin: 5px;
+nav:hover ul {
+    display: block;
 }
 
-header{
-    display: flex;
-    height: auto;
-    background-image: url("../images/background.jpg");
-    background-size: cover; 
-    margin: 0px;
-    flex-direction: row;
-    align-items: center;
+nav:hover .dropdown {
+    background-color: green;
 }
+/* End Dropdown Menu */
 
-nav {
+.header_content > h1 {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end; 
+    letter-spacing: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown {
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 a:visited{
@@ -96,27 +130,15 @@ p {
     width: 50%;
 }
 
-.footimg {
-    width: 50px;
-    height: 50px;
-    display: inline;
-    padding: 2px;
-    border: 1px solid black;
-    margin: 5px;
-}
-
-.footimg:hover {
-    border-right: 4px solid blueviolet;
-    border-bottom: 4px solid blueviolet;
-    background-color: white;
-}
-
 footer {
     background-color: rgb(176, 214, 227);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.foot {
-    margin-left: 5px;
+footer a {
+    width: 5em;
 }
 
 .copy{
@@ -153,7 +175,7 @@ footer {
 }
 
 .logo {
-    display: inline;
+    height: 1em;
 }
 
 main {
@@ -162,7 +184,16 @@ main {
     overflow:hidden;
 }
 
-.me:nth-child(odd):hover {
+.intro {
+    width: 90%;
+    font-size: 16px;
+    background-color: white;
+    border: 2px dashed black;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* .me:nth-child(odd):hover {
     border-right: 10px solid white;
     border-bottom: 10px solid white;
     width: 400px;
@@ -192,13 +223,4 @@ div img:nth-child(odd) {
     padding:10px;
     border: 10px solid white;
     width: 400px;
-}
-
-.intro {
-    width: 90%;
-    font-size: 16px;
-    background-color: white;
-    border: 2px dashed black;
-    padding: 5px;
-    margin: 5px;
-}
+} */

@@ -23,15 +23,20 @@
 <body>
     <header>
         <a class="skip" href=#main>Skip to Main Content</a>
-        <h1>Community Engagement</h1>
-		<nav>
-			<ul>
-				<li><a href = "index.html" >About Me</a></li>
-				<li><a href = "work.html">Work Experience</a></li>
-				<li class="active"><a href = "community.html">Community Engagement</a></li>
-				<li><a href = "personal.html">Personal Life</a></li>
-			</ul>
-		</nav>
+        <div class="header_content">
+		    <nav>
+                <div class="dropdown">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
+			    <ul>
+                    <li><a href = "index.html">About Me</a></li>
+				    <li><a href = "work.html">Work Experience</a></li>
+				    <li class="active"><a href = "community.html">Community Engagement</a></li>
+				    <li><a href = "personal.html">Personal Life</a></li>
+			    </ul>
+		    </nav>
+            <h1>Community Engagement</h1>
+        </div>
     </header>
 
     <main>
@@ -71,11 +76,11 @@
         <h3 class = "foot">
             Let's connect!
         </h3>
-
-        <a href = "https://www.linkedin.com/in/cameron-moy-9477771bb/" target="_blank"><img class = "footimg" src="images/linkedin.png" alt = "LinkedIn Logo" width=200 /></a>
-        <a href = "https://www.instagram.com/cmoy.11/" target="_blank"><img class = "footimg" src="images/instagram.png" alt = "Instagram Logo" width=200 /></a>
-        <a href = "moycam@umich.edu" target="_blank"><img class = "footimg" src="images/gmail.png" alt="Gmail Logo" width = 200 /></a>
-        <a href="docs/CMoyResume.pdf" target="_blank"><img class = "footimg" src="images/resume.png" alt = "Resume Link" width=200 /></a> 
+        <div class="contacts">
+            <a href = "https://www.linkedin.com/in/cameron-moy-9477771bb/" target="_blank"><i class="fa-brands fa-linkedin fa-3x" aria-label="LinkedIn Logo"></i></a>
+            <a href = "https://www.instagram.com/cmoy.11/" target="_blank"><i class="fa-brands fa-instagram-square fa-3x" aria-label="Instagram Logo"></i></a>
+            <a href="docs/CMoyResume.pdf" target="_blank"><i class="fa-solid fa-file-lines fa-3x" aria-label="Resume Logo"></i></i></a> 
+        </div>
 		<p  class = "copy">Cameron Moy &copy; 2022</p>
     </footer>
 </body>
