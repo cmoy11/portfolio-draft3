@@ -7,7 +7,7 @@
 }
 
 header{
-    min-height: 10em;
+    min-height: 8em;
     background-image: url("../images/cb.jpg");
     background-size: cover;
     background-repeat: no-repeat; 
@@ -20,7 +20,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;;
-    min-height: 10em;
+    min-height: 8em;
 }
 
 .header_content > h1 {
@@ -83,12 +83,11 @@ nav:hover .dropdown {
 i.footer {
     border-radius: 60px;
     background-color: white;
-    /* box-shadow: 0 0 2px #888; */
     padding: 0.25em 0.3em;
 }
 
-a:visited{
-    color: inherit;
+a {
+    color: #000;
 }
 
 a.skip {
@@ -103,18 +102,17 @@ a.skip:focus {
 }
 
 footer {
-    /* background-color: #000; */
     display: flex;
     position: sticky;
     bottom: 0;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding: 1em 0 0 0;
+    padding: 0.5em;
     background-image: url("../images/cb.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 90%;
+    background-position-y: 65%;
 }
 
 .copy{
