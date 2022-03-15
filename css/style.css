@@ -10,7 +10,6 @@ header{
     min-height: 10em;
     background-image: url("../images/cb.jpg");
     background-size: cover;
-    /* position: absolute; */
     background-repeat: no-repeat; 
     background-position-y:40%;
     border-bottom: 3px solid black;
@@ -38,7 +37,7 @@ header{
 /* Dropdown Menu */
 nav {
     justify-self: flex-start;
-    margin: 5px;
+    margin: 1em;
 }
 
 nav ul {
@@ -81,6 +80,13 @@ nav:hover .dropdown {
 }
 /* End Dropdown Menu */
 
+i.footer {
+    border-radius: 60px;
+    background-color: white;
+    /* box-shadow: 0 0 2px #888; */
+    padding: 0.25em 0.3em;
+}
+
 a:visited{
     color: inherit;
 }
@@ -95,6 +101,28 @@ a.skip:focus {
     position: fixed;
     left: 0px;
 }
+
+footer {
+    /* background-color: #000; */
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0 0 0;
+    background-image: url("../images/cb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 90%;
+}
+
+.copy{
+    text-align: center;
+    color: #fff;
+}
+
+/* Checked */
 
 h2 {
     margin: 5px 5px 5px 5px;
@@ -126,21 +154,6 @@ p {
     margin-right: 5px;
     margin-top: 5px;
     width: 50%;
-}
-
-footer {
-    background-color: rgb(176, 214, 227);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer a {
-    width: 5em;
-}
-
-.copy{
-    text-align: center;
 }
 
 .skill{
