@@ -78,6 +78,7 @@ nav:hover ul {
 nav:hover .dropdown {
     background-color: #FFF;
 }
+
 /* End Dropdown Menu */
 
 i.footer {
@@ -122,8 +123,52 @@ footer {
 
 form {
     margin-top: 20px;
+    width: 95%;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
 }
 
+.name {
+    display: inline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    background-color:#d6deeac4;
+}
+
+#capitol {
+    background-image: url("../images/capitol.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position-y:0;
+    background-position-x: center;
+    min-height: 50vh;
+}
+
+#mcsp {
+    background-image: url("../images/mcsp.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position-y:center;
+    background-position-x: center;
+    min-height: 50vh;
+}
+
+#dmum {
+    background-image: url("../images/dmum.png");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position-y:bottom;
+    background-position-x: center;
+    min-height: 50vh;
+}
 /* Checked */
 
 h2 {
@@ -140,22 +185,12 @@ h3 {
     margin-top: 20px;
 }
 
-.right {
-    margin-left: 50%;
-    width: 100%
-}
-
-div h2{
-    width: 50%;
-}
-
 p {
     display: inline-block;
     margin-left: 5px;
     margin-bottom: 20px;
     margin-right: 5px;
     margin-top: 5px;
-    width: 50%;
 }
 
 .skill{
@@ -191,12 +226,6 @@ p {
     height: 1em;
 }
 
-main {
-    /* background-color: rgba(134, 47, 177, 0.372); */
-    padding: 10px;
-    overflow:hidden;
-}
-
 .intro {
     width: 90%;
     font-size: 16px;
@@ -205,35 +234,3 @@ main {
     padding: 5px;
     margin: 5px;
 }
-
-/* .me:nth-child(odd):hover {
-    border-right: 10px solid white;
-    border-bottom: 10px solid white;
-    width: 400px;
-    padding: 0px;
-}
-
-div img:nth-child(even):hover {
-    margin-left:50px;
-}
-
-div img {
-    padding: 4px;
-    border: 2px dashed black;
-}
-
-div img:nth-child(odd) {
-    border-radius: 15%;
-}
-
-.work_img  {
-    padding: 2px;
-    border: 1px solid black;
-    margin: 5px;
-}
-
-.work_img:hover {
-    padding:10px;
-    border: 10px solid white;
-    width: 400px;
-} */
