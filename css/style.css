@@ -177,7 +177,7 @@ main {
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     align-items: center;
     column-gap: 1vw;
     row-gap: 2vw;
