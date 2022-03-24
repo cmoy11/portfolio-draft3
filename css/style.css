@@ -115,14 +115,14 @@ form > input {
     display: inline-block;
     width: 100%;
     height: 2em;
-    margin: 0.25em 0 1em 0;
+    margin: 0.25em 1em 1em 0;
 }
 
 form > textarea {
     display: inline-block;
     width: 100%;
     height: 4em;
-    margin: 0.25em 0 0.5em 0;
+    margin: 0.25em 1em 0.5em 0;
 }
 
 form > input:last-child {
@@ -209,8 +209,8 @@ main {
 .skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2vw;
+    justify-content: space-around;
+    margin: 0;
 }
 
 .skill {
@@ -228,6 +228,14 @@ main {
 .skill > p {
     text-align: center;
     font-weight: bold;
+}
+
+.div_skills {
+    margin: 5px;
+}
+
+.div_skills h3 {
+    margin-left: 15px;
 }
 
 h2 {
