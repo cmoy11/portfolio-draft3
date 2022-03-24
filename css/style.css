@@ -132,7 +132,7 @@ form > input:last-child {
 }
 
 form > input:last-child:hover {
-    background-color:#C5D6F0; 
+    background-color:#F0E1C5; 
 }
 /* End form styling */
 
@@ -143,7 +143,7 @@ i.footer {
 }
 
 i.footer:hover {
-    background-color: #C5D6F0;
+    background-color: #F0E1C5;
 }
 
 a {
@@ -210,7 +210,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0;
 }
 
 .skill {
@@ -230,14 +229,6 @@ main {
     font-weight: bold;
 }
 
-.div_skills {
-    margin: 5px;
-}
-
-.div_skills h3 {
-    margin-left: 15px;
-}
-
 h2 {
     font-size: 5vw;
     font-family: 'Open Sans', sans-serif;
@@ -247,15 +238,30 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 5vw;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 20px;
     margin-bottom: 10px;
+}
+
+h4 {
+    display: block;
+    width: 100%;
+    grid-column: 1/3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4vw;
+}
+
+h5 {
+    text-decoration: underline;
+    grid-column: 1/3;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: bold;
 }
 
 p {
     font-family: 'Palanquin', sans-serif;
+    margin-bottom: 20px;
 }
 
 li {
@@ -271,13 +277,14 @@ li {
     background-color: white;
     border: 2px solid black;
     padding: 10px;
+    margin: 0px;
 }
 
 .aboutme {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
-    column-gap: 15px;;
+    column-gap: 15px;
     margin: 15px;
 }
 
