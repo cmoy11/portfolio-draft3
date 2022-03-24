@@ -74,10 +74,38 @@
 
     <footer>
         <div class="contacts">
-            <a href = "https://www.linkedin.com/in/cameron-moy-9477771bb/" target="_blank"><i class="footer fa-brands fa-linkedin fa-2x" aria-label="LinkedIn Logo"></i></a>
+            <a href = "https://www.linkedin.com/in/cameron-moy-9477771bb/" target="_blank" aria-label="LinkedIn Logo"><i class="footer fa-brands fa-linkedin fa-2x" aria-label="LinkedIn Logo"></i></a>
             <a href = "https://www.instagram.com/cmoy.11/" target="_blank"><i class="footer fa-brands fa-instagram-square fa-2x" aria-label="Instagram Logo"></i></a>
-            <a href="docs/CMoyResume.pdf" target="_blank"><i class="footer fa-solid fa-file-lines fa-2x" aria-label="Resume Logo"></i></i></a> 
+
+            <div class="resume">
+                <button onclick="openModal()" id="resumeButton"><i class="footer fa-solid fa-file-lines fa-2x" aria-label="Resume Logo"></i></button>
+
+                <div class="modal" id="resumeModal">
+                    <div class="modalContent">
+                        <span onclick="closeModal()" class="close">&times;</span>
+                        <embed src="docs/CMoyResume.pdf"/> 
+                    </div>
+                </div>
+
+            </div>
         </div>
     </footer>
+
+    <script>
+        var modal = document.querySelector("#resumeModal");
+        var button = document.querySelector("#resumeButton");
+        var close = document.querySelector(".close");
+        function openModal() {
+            modal.style.display = "block";
+        }
+        function closeModal() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
 </body>
 </html>
