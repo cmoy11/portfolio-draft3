@@ -192,14 +192,15 @@ main {
     align-items: center;
     column-gap: 1vw;
     row-gap: 2vw;
-    margin: 15px;
     padding: 10px;
     background-color: #F0E1C5;
     border: 2px solid #000;
+    border-radius: 10px;
 }
 
 .content > img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .content > p {
@@ -278,6 +279,7 @@ li {
     border: 2px solid black;
     padding: 10px;
     margin: 0px;
+    border-radius: 10px;
 }
 
 .aboutme {
@@ -335,4 +337,71 @@ main > div {
 
 .missionVision > img {
     border-radius: 50%;
+}
+
+.parallaxOne > div{
+    height:10em;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.parallaxOne > .intro{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.parallax > .head {
+    background-image: url("../images/pandamonium.jpg");
+    grid-column: 1/3;
+    grid-row: 1/2;
+    height:10em;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+.parallax > h3 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 8vw;
+}
+
+.parallax {
+    padding: 0;
+}
+
+.parallax > p {
+    padding: 15px;
+}
+
+.content:nth-child(odd) {
+    background-color: #fff;
+}
+
+.content > p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.footdiv {
+    padding: 20px;
+    grid-column: 1/3;
+    width: auto;
+}
+
+.foot {
+    border-radius: 10px;
+}
+
+.mid {
+    border-radius: 50% !important;
+    margin: 10px;
+}
+
+.midp {
+    grid-column: 2/3 !important;
 }
