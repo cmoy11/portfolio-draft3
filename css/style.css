@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@300&display=swap');
 
+* {
+    max-width: 100%;
+}
+
 .active {
     background-color: #FFF;
     text-transform: uppercase;
@@ -271,8 +275,6 @@ li {
 
 .headshot {
     border-radius: 50%;
-    width: 30vw;
-    height: 30vw;
 }
 
 main > div {
