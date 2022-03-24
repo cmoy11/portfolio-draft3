@@ -40,92 +40,95 @@
 	</header>
 
 	<main>
-        <div>
-            <h2 id="main">
-                Welcome, I'm Cameron!
-            </h2>
+        <div class="aboutme">
+            <img class = "headshot" src="images/headshot.jpg" alt = "Personal headshot"/>
+            
+            <div class="two">
+                <h2 id="main">Welcome, I'm Cameron!</h2>
+            
+                <p>    
+                    I am so glad you are here. On this page you will find more information on my work experience, community engagement, and personal life. As an extrovert, I love meeting new people, so feel free to reach out! 
+                </p>
+            </div>
+            
         </div>
-        
-        
-        
-        <div>
-            <img class = "me" src="images/headshot.jpg" alt = "Personal headshot" width=200 />
-        
-            <img class = "me" src="images/bighouse.jpg" alt = "Me at my first game in the Big House" width=200 />
-
-            <img class = "me" src="images/cb.jpg" alt = "Image of Crested Butte at dusk" width=200 />
-
-            <img class = "me" src="images/river.jpg" alt = "Picture of me standing by a river and mountain in Colorado" width=200 />
-
+         
+        <div class="me">
             <h3>A little bit about me...</h3>
             
-            <p>
-                I am currently a Sophomore at the University of Michigan studying Information Analytics at the School of Information with a double minor in Social Class and Inequalities Studies and Music. Originally hailing from Okemos, MI (a small suburb outside of East Lansing), I have been a Michigan fan my whole life and attended my first game in the Big House in 2010! Outside of my love for all things data, you can find me serving in my local communities, singing with my a cappella group, Amazin' Blue, or skiing with my friends and family.
-            </p>
+            <div class="megrid">
+                <p>
+                    I am currently a Sophomore at the University of Michigan studying Information Analytics at the School of Information with a double minor in Social Class and Inequalities Studies and Music. Originally hailing from Okemos, MI (a small suburb outside of East Lansing), I have been a Michigan fan my whole life and attended my first game in the Big House in 2010! 
+                </p>
 
-            <p>    
-                I am so glad you are here. On this page you will find more information on my work experience, community engagement, and personal life. As an extreme extrovert, I love meeting new people, so feel free to reach out! 
-            </p>
+                <div class="mecontainer">
+                    <img src="images/bighouse.jpg" alt = "Me at my first game in the Big House" width=200 />
+                </div>
 
+                <div class="mecontainer">
+                    <img src="images/river.jpg" alt = "Picture of me standing by a river and mountain in Colorado" width=200 />
+                </div>
+
+                <p>
+                    Outside of my love for all things data, you can find me serving in my local communities, singing with my a cappella group, Amazin' Blue, or skiing with my friends and family.
+                </p>
+            </div>
         </div>
         
-        <div>
-            <img class = "me"  src="images/cbtop.jpg" alt = "Image of me at the top of Crested Butte" width=200 />
+        <div class="missionVision">
+            <div>
+                <h3>My Mission</h3>
         
-            <h3>My mission</h3>
-        
-            <p>
-                To develop deep, enriching relationships with family and friends; to serve and promote equity within my community, sparking lasting positive change as both a learner and a leader; to recognize and hold myself accountable to personal goals and happiness; to find joy in everything I do.
-            </p>
-        </div>
+                <p>
+                    To develop deep, enriching relationships with family and friends; to serve and promote equity within my community, sparking lasting positive change as both a learner and a leader; to recognize and hold myself accountable to personal goals and happiness; to find joy in everything I do.
+                </p>
 		
-        <div class="values">
-            <h3>My values</h3>
-        
-            <ul>
-                <li>Empathy</li>
-                <li>Equity</li>
-                <li>Community</li>
-                <li>Connection</li>
-                <li>Collaboration</li>
-                <li>Enthusiasm</li>
-            </ul>
+                <h3>My Values</h3>
+            
+                <ul>
+                    <li>Empathy</li>
+                    <li>Equity</li>
+                    <li>Community</li>
+                    <li>Connection</li>
+                    <li>Collaboration</li>
+                </ul>
+            </div>
+
+            <img src="images/cbtop.jpg" alt = "Image of me at the top of Crested Butte" width=200 />
         </div>
         
         <div class="div_skills">
-            <h3>
-                My Skills
-            </h3>
+            <h3>My Skills</h3>
 
             <div class="skills">
                 <div class =  "skill">
                     <img src="images/html.png" alt = "HTML5 Logo"/>
-                    <h5 class = "skill_description">HTML</h5>
+                    <p>HTML</p>
                 </div>
 
                 <div class = "skill">
                     <img src="images/css.png" alt = "CSS3 Logo"/>
-                    <h5 class = "skill_description">CSS</h5>
+                    <p>CSS</p>
                 </div>
 
                 <div class = "skill">
                     <img src="images/javascript.png" alt = "JavaScript Logo"/>
-                    <h5 class = "skill_description">JavaScript</h5>
+                    <p>JavaScript</p>
                 </div>
 
                 <div class = "skill">
                     <img src="images/python.png" alt = "Python Logo"/>
-                    <h5 class = "skill_description">Python</h5>
+                    <p>Python</p>
                 </div>
 
                 <div class = "skill">
                     <img src="images/office.png" alt = "Microsoft Office Logo"/>
-                    <h5 class = "skill_description">Microsoft<br>Office</h5>
+                    <p>Microsoft<br>Office</p>
                 </div>
                 
                 <div class = "skill">
                     <img src="images/photoshop.png" alt = "Photoshop Logo"/>
-                    <h5 class = "skill_description">Photoshop</h5>
+                    <p>Photoshop</p>
                 </div>
             </div>
         </div>
@@ -134,13 +137,13 @@
             <form  action="https://formspree.io/f/meqnzzok" method="POST">
                 <legend>Contact Me!</legend>
                 <label for="first_name" class="name">First Name</label>
-                <input type="text" placeholder="First Name" name="first_name" id="first_name" class="name" required>
+                <input type="text" placeholder="First Name (Required)" name="first_name" id="first_name" class="name" required>
                     
                 <label for="last_name" class="name">Last Name</label>
-                <input type="text" placeholder="Last Name" name="last_name" id="last_name" class="name" required>
+                <input type="text" placeholder="Last Name (Required)" name="last_name" id="last_name" class="name" required>
     
                 <br><label for="email">Email</label>
-                <input type="text" placeholder="Email" name="email" id="email" required>
+                <input type="text" placeholder="Email (Required)" name="email" id="email" required>
     
                 <label for="phone">Phone</label>
                 <input type="text" placeholder="Phone Number" name="phone" id="phone">

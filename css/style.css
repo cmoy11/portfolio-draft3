@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@300&display=swap');
 
 .active {
     background-color: #FFF;
@@ -84,6 +85,7 @@ nav:hover .dropdown {
 /* Form Styling */
 .form {
     background-color:#7688a3;
+    margin: 0;
 }
 
 form {
@@ -94,10 +96,15 @@ form {
     background-color:#d6deea;
 }
 
+form > label, ::placeholder {
+    font-family: 'Palanquin', sans-serif;
+}
+
 form > legend {
     font-size: 3em;
     margin-bottom: 10px;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 form > input {
@@ -214,30 +221,33 @@ main {
     padding-bottom: 0.25em;
 }
 
-.skill > h5 {
+.skill > p {
     text-align: center;
+    font-weight: bold;
 }
 
 h2 {
-    margin: 5px 5px 5px 5px;
-    font-size: 30px;
+    font-size: 5vw;
     font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 h3 {
     font-size: 24px;
     font-weight: bold;
-    text-decoration: underline;
-    margin: 5px 5px 5px 2px;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 p {
-    display: inline-block;
-    margin-left: 5px;
-    margin-bottom: 20px;
-    margin-right: 5px;
-    margin-top: 5px;
+    font-family: 'Palanquin', sans-serif;
+}
+
+li {
+    font-family: 'Palanquin', sans-serif;
 }
 
 .logo {
@@ -249,5 +259,63 @@ p {
     background-color: white;
     border: 2px solid black;
     padding: 10px;
+}
+
+.aboutme {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    column-gap: 15px;;
     margin: 15px;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+}
+
+main > div {
+    margin: 15px;
+}
+
+.mecontainer > img {
+    border-radius: 50%;
+}
+
+.megrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.me {
+    background-color: #7688a3;
+    padding: 30px;
+    margin: 0;
+}
+
+.values ul li {
+    display: flex;
+    align-items: center;
+}
+
+.values ul li::before {
+    content: "•";
+    font-size: 30px; 
+    padding-right: 5px;
+}
+
+.missionVision {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.missionVision > img {
+    border-radius: 50%;
 }
