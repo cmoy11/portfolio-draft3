@@ -100,38 +100,38 @@ form {
     background-color:#d6deea;
 }
 
-form > label, ::placeholder {
+fieldset > label, ::placeholder {
     font-family: 'Palanquin', sans-serif;
 }
 
-form > legend {
+fieldset > legend {
     font-size: 3em;
     margin-bottom: 10px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
-form > input {
+fieldset > input {
     display: inline-block;
     width: 100%;
     height: 2em;
     margin: 0.25em 1em 1em 0;
 }
 
-form > textarea {
+fieldset > textarea {
     display: inline-block;
     width: 100%;
     height: 4em;
     margin: 0.25em 1em 0.5em 0;
 }
 
-form > input:last-child {
+fieldset > input:last-child {
     width: 25%;
     border-radius: 3px;
     margin-left: 37.5%;
 }
 
-form > input:last-child:hover {
+fieldset > input:last-child:hover {
     background-color:#F0E1C5; 
 }
 /* End form styling */
@@ -435,6 +435,7 @@ main > div {
     width: 81vw;
     height: 89vh;
     background-color: #F0E1C5;
+    overflow: scroll;
   }
   
   .modalContent {
@@ -450,6 +451,7 @@ main > div {
       width: 100%;
       height: 95%;
       display: inline-block;
+      overflow-x: scroll;
   }
   
   .close {
@@ -467,6 +469,10 @@ main > div {
     animation-name: animationOne;
     animation-duration: 4s; 
     animation-timing-function: ease-in-out;
+  }
+
+  .resume {
+      height: 100%;
   }
 
   @keyframes animationOne {

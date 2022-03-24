@@ -130,34 +130,36 @@
         
         <div class="form">
             <form  action="https://formspree.io/f/meqnzzok" method="POST">
-                <legend>Contact Me!</legend>
-                <label for="first_name" class="name">First Name</label>
-                <input type="text" placeholder="First Name (Required)" name="first_name" id="first_name" class="name" required>
-                    
-                <label for="last_name" class="name">Last Name</label>
-                <input type="text" placeholder="Last Name (Required)" name="last_name" id="last_name" class="name" required>
-    
-                <br><label for="email">Email</label>
-                <input type="text" placeholder="Email (Required)" name="email" id="email" required>
-    
-                <label for="phone">Phone</label>
-                <input type="text" placeholder="Phone Number" name="phone" id="phone">
-    
-                <br><label for="message">Message</label>
-                <textarea id="message" placeholder="Send me a message :)"></textarea> 
-    
-                <br><input type="submit" value="Submit">
+                <fieldset>
+                    <legend>Contact Me!</legend>
+                    <label for="first_name" class="name">First Name</label>
+                    <input type="text" placeholder="First Name (Required)" name="first_name" id="first_name" class="name" required>
+                        
+                    <label for="last_name" class="name">Last Name</label>
+                    <input type="text" placeholder="Last Name (Required)" name="last_name" id="last_name" class="name" required>
+        
+                    <br><label for="email">Email</label>
+                    <input type="text" placeholder="Email (Required)" name="email" id="email" required>
+        
+                    <label for="phone">Phone</label>
+                    <input type="text" placeholder="Phone Number" name="phone" id="phone">
+        
+                    <br><label for="message">Message</label>
+                    <textarea id="message" placeholder="Send me a message :)"></textarea> 
+        
+                    <br><input type="submit" value="Submit">
+                </fieldset>
             </form>
         </div>
 	</main>
 
 	<footer>
         <div class="contacts">
-            <a href = "https://www.linkedin.com/in/cameron-moy-9477771bb/" target="_blank" aria-label="LinkedIn Logo"><i class="footer fa-brands fa-linkedin fa-2x" aria-label="LinkedIn Logo"></i></a>
-            <a href = "https://www.instagram.com/cmoy.11/" aria-label="Instagram Logo" target="_blank"><i class="footer fa-brands fa-instagram-square fa-2x" aria-label="Instagram Logo"></i></a>
+            <a href = "https://www.linkedin.com/in/cameron-moy-9477771bb/" target="_blank" aria-label="LinkedIn Logo"><i class="footer fa-brands fa-linkedin fa-2x"></i></a>
+            <a href = "https://www.instagram.com/cmoy.11/" aria-label="Instagram Logo" target="_blank"><i class="footer fa-brands fa-instagram-square fa-2x"></i></a>
 
             <div class="resume">
-                <button onclick="openModal()" id="resumeButton" aria-label="Resume Logo"><i class="footer fa-solid fa-file-lines fa-2x" aria-label="Resume Logo"></i></button>
+                <button onclick="openModal()" id="resumeButton" aria-label="Resume Logo"><i class="footer fa-solid fa-file-lines fa-2x"></i></button>
 
                 <div class="modal" id="resumeModal">
                     <div class="modalContent">
